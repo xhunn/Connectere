@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "connectere-ph"
+  },
+  "targets": {
+    "connectere-ph": {
+      "hosting": {
+        "Connect-NGO": [
+          "connectere-ph"
+        ]
+      }
+    }
+  }
+}
