@@ -1,0 +1,10 @@
+.footer {
+    background-color: black;
+    height: 100px;
+}
+
+.text-inside {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}
