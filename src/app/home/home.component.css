@@ -29,6 +29,10 @@
     margin-top: 30px;
   }
   
+  h2 {
+    font-size: 40px;
+  }
+
   h3, p {
       font-family: 'Open Sans', sans-serif;
       margin-bottom: 30px;
@@ -59,4 +63,20 @@
     background-size: cover;
   }
 
-  
+  .content-1 {
+    margin: 50px;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-3 {
+    text-align: center;
+  }
