@@ -1,0 +1,34 @@
+.top-nav{
+    list-style-type: none;
+    overflow: hidden;
+    background-image: linear-gradient(to right,#E71D36, #1E76E8);
+}
+
+.top-nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 75px;
+    line-height: 50px;
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .top-nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  img{
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 60px;
+  }
