@@ -1,0 +1,28 @@
+<h1 class="text-center mt-4" >Articles</h1>
+
+<div *ngFor="let article of articles; index as data" class="p-5 mx-5">
+   <ng-template [ngIf]="data % 2 === 0">
+      <div class="row justify-content-center">
+         <div class="col-6">
+            <img [src]="article.asset" alt="" class="border border-dark"/>
+         </div>
+         <div class="col-6">
+            <h3><strong>{{data + 1}}: {{article.title}}</strong></h3>
+            <h5>Written by: <i>{{article.writer}}</i></h5>
+            <p [innerHTML]="article.body" class="text-justify"></p>
+         </div>
+      </div>
+   </ng-template>
+   <ng-template [ngIf]="data % 2 !== 0">
+      <div class="row justify-content-center">
+         <div class="col-6">
+            <h3><strong>{{data + 1}}: {{article.title}}</strong></h3>
+            <h5>Written by: <i>{{article.writer}}</i></h5>
+            <p [innerHTML]="article.body" class="text-justify"></p>
+         </div>
+         <div class="col-6">
+            <img [src]="article.asset" alt="" class="align-middle"/>
+         </div>
+      </div>
+   </ng-template>
+</div>

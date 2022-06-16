@@ -1,0 +1,46 @@
+<h1 class="text-center mt-4">About</h1>
+
+<div *ngFor="let person of people; index as data" class="p-5 mx-5">
+      <div class="row justify-content-center">
+
+         <div class="row justify-content-center p-3">
+
+            <!-- Photo -->
+            <div class="col-3"
+               data-aos="fade-up"
+               data-aos-duration="1500">
+               <img [src]="person.asset" alt="" class="img-fluid border border-dark" />
+            </div>
+
+            <!-- Description -->
+            <div class="col-5"
+               data-aos="fade-left"
+               data-aos-duration="1500">
+               <div class="pt-4">
+                  <ng-template [ngIf]="person.title">
+                     <h4 class="text-center"><strong>{{person.name}}</strong>, {{person.title}}</h4>
+                  </ng-template>
+                  <ng-template [ngIf]="!person.title">
+                     <h4 class="text-center"><strong>{{person.name}}</strong></h4>
+                  </ng-template>
+                  <p [innerHTML]="person.about" class="text-justify"></p>
+                  <hr><br>
+
+                  <!-- Links -->
+                  <ng-template [ngIf]="person.linkedin">
+                     <a [href]="person.linkedin" class="mx-4"><img src="assets/linkedin.ico" alt="LinkedIn"></a>
+                  </ng-template>
+                  <ng-template [ngIf]="person.github">
+                     <a [href]="person.github" class="mx-4"><img src="assets/github.ico" alt="Github"></a>
+                  </ng-template>
+                  <ng-template [ngIf]="person.twitter">
+                     <a [href]="person.twitter" class="mx-4"><img src="assets/twitter.ico" alt="Twitter"></a>
+                  </ng-template>
+
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+</div>
